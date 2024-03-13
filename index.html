@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>So'rovnoma</h1>
+        <div class="Ota">
+            <form action="https://echo.htmlacademy.ru">
+                <label for="correct">Ism</label>
+                <input id="correct" class="text" type="text" name="ismi" placeholder="Ismingizni kiriting" required
+                    pattern="[a-z]{4,8}" title="4 to 8 lowercase letters" /> <br> <br>
+                <label for="error">Parol</label>
+                <input id="error" class="error" type="password" placeholder="Kodni kiriting" required pattern=".{8,}"
+                    title="Eight  or more  characters">
+                <p>Yoqtirgan sport turingizni tanlang?</p>
+
+                <label>
+                    <span class="bir">
+                        <input class="checkbox" type="checkbox" name="bosketboll">
+                        <span class="box-1">
+                            <img class="box-img" src="/img/oyin/basketboll.svg" alt="">
+                        </span> <!-- .box-1 -->
+                        <span class="input-text">Basketboll</span>
+                    </span>
+                </label>
+                <label>
+                    <span class="bir">
+                        <input class="checkbox" type="checkbox" name="Voleyboll">
+                        <span class="box-1">
+                            <img class="box-img" src="/img/oyin/vallebal.svg" alt="">
+                        </span> <!-- .box-1 -->
+                        <span class="input-text">Voleyboll</span>
+                    </span>
+                </label>
+                <label>
+                    <span class="bir">
+                        <input class="checkbox" type="checkbox" name="Tenis">
+                        <span class="box-1">
+                            <img class="box-img" src="/img/oyin/Vector.svg" alt="">
+                        </span> <!-- .box-1 -->
+                        <span class="input-text">Tenis</span>
+                    </span>
+                </label>
+                <span class="bir">
+                    <input class="checkbox" type="checkbox" name="Hakkey">
+                    <span class="box-1">
+                        <img class="box-img" src="/img/oyin/hokey.svg" alt="">
+                    </span> <!-- .box-1 -->
+                    <span class="input-text">Hakkey</span>
+                </span>
+                </label>
+                <p>Sport turlariga umuman qiziqmiydiganla uchun!</p>
+                <label>
+                    <span class="bir">
+                        <input class="checkbox" type="checkbox" name="Yo umuman sport turiga qiziqmiyman">
+                        <span class="box-1">
+                            <img width="25px" height="25px" class="box-img"
+                                src="data:image/png;base64,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"
+                                alt="">
+                        </span> <!-- .box-1 -->
+                        <span class="input-text">Yo men umuman sportga qiziqmiyman </span>
+                    </span>
+                </label>
+
+                <button>Kirish</button>
+        </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

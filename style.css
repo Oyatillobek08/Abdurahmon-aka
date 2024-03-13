@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+
+}
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:bisque;
+}
+.Ota{
+    padding-bottom: 30px;
+display: flex;
+justify-content: center;
+border: 1px solid aquamarine;
+padding-top: 30px;
+}
+.box-1 {
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+   border-radius: 6px;
+}
+.bir{
+display: flex;
+margin-bottom: 20px;
+margin-top: 30px;
+}
+.box-img {
+    display: none;
+}
+input:checked ~ .box-1 > .box-img{
+    display: block;
+}
+input:checked ~ .box-1{
+    box-shadow: ;
+}
+.text{
+    margin-bottom: 30px;
+    border: 2px solid black;
+}
+.input-text{
+display: flex;
+align-items: center;
+}
+.checkbox{
+    display: none;
+}
+button:hover{
+    background-color: red;
+    transition: all 2s ease;
+   cursor: pointer;
+   border:1px solid black;
+}
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.img-0{
+
+    width: 10px;
+    height: 10px;
+}
+.error{
+margin-bottom: 30px;
+border: 4px solid black;
+}
+.error:valid{
+    border: 4px solid green;
+    color: green;
+
+}
+.error:not(:placeholder-shown):invalid{
+    border: 4px solid red;
+    color: red;
+}
+
+.text:valid{
+    border: 4px solid green;
+    color: green;
+}
+.text:not(:placeholder-shown):invalid{
+    border:4px solid red;
+    color: red;
+}
+.radio{
+    width: 25px;
+    height: 25px;
+}
